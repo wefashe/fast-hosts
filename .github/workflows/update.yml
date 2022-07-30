@@ -32,8 +32,8 @@ jobs:
     - name: Commit
       id: commit
       run: |
-        git config --global user.email wefashe@qq.com
-        git config --global user.name Java CI
+        git config --global user.email "wefashe@qq.com"
+        git config --global user.name "Java CI"
         git add .
         git commit -m "$(git config user.name) auto update hosts at `TZ=UTC-8 date +%Y-%m-%d\ %H:%M:%S`"
       continue-on-error: true
