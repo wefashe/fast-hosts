@@ -169,7 +169,7 @@ public class Update {
         String url = String.format("https://sitereport.netcraft.com/?url=%s", host);
         Element body = Jsoup.connect(url)
                 .userAgent("Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36")
-                .timeout(50000)
+                .timeout(60000)
                 .referrer("https://sitereport.netcraft.com/")
                 .get()
                 .body();
