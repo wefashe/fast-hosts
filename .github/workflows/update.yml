@@ -6,7 +6,7 @@ name: update hosts
 on:
   push:
   schedule:
-    - cron: '0 0/60 1-9 * * ?'
+    - cron: '0 0/60 1-9 * *'
   workflow_dispatch:
 
 jobs:
