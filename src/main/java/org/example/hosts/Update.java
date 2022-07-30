@@ -177,8 +177,10 @@ public class Update {
                 .get()
                 .body();
         String text = body.select("#ip_address").text();
+        long time = ping(text);
+        String speed = ((int) (time / 1000)) > 2 ? "慢" : "快";
         System.out.printf("正在为[%s]选取最快的IP...\n", host);
-        System.out.println(text + "  " + host);
+        System.out.println("ip: "+text + ", time: " + time + "(" + speed+")");
         return text;
     }
 
