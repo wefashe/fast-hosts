@@ -1,0 +1,2 @@
+# fast-hosts
+GitHub Hosts
