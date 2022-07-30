@@ -6,7 +6,7 @@ name: update hosts
 on:
   push:
   schedule:
-    - cron: '0 0/60 1-9 * * ?'
+    - cron: '0 0/60 1-9 * *'
   workflow_dispatch:
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Run jar Create hosts
-      run: java -jar target/github-hosts-1.0.jar
+      run: java -jar target/fast-hosts-1.0-SNAPSHOT.jar
     - name: Clear target
       run: rm -rf target/
 
