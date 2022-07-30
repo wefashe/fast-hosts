@@ -149,7 +149,7 @@ public class Update {
 
     public static String findWrapper(String host) throws Exception {
         String ip = findIp(host);
-        return String.format("%-15s     %s", ip, host);
+        return String.format("%-15s              %s", ip, host);
     }
 
     // public static String findIp(String host) throws Exception {
