@@ -101,7 +101,7 @@ public class Update {
         String time = String.format("%s %s", dateTime, week);
         text = String.format("# update time: %s", time);
         hostsString.append(text).append(System.lineSeparator());
-        text = "https://raw.githubusercontent.com/wefashe/fast-hosts/main/hosts";
+        text = "https://cdn.jsdelivr.net/gh/wefashe/fast-hosts/hosts";
         text = String.format("# update text: %s", text);
         hostsString.append(text).append(System.lineSeparator());
         text = "# GitHub Host End";
