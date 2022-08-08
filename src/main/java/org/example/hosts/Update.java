@@ -95,7 +95,7 @@ public class Update {
 
         hostsString.append(System.lineSeparator());
         LocalDateTime now = LocalDateTime.now(ZoneId.of("UTC+8"));
-        DateTimeFormatter ofPattern = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
+        DateTimeFormatter ofPattern = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String dateTime = now.format(ofPattern);
         String week = getWeek(now);
         String time = String.format("%s %s", dateTime, week);
